@@ -3,10 +3,11 @@ import Image from 'next/image'
 import LogoImg from "@/public/assets/img/logo.webp"
 import Link from 'next/link'
 import { HeaderLinks, HeaderLinkProps } from '@/constants/constants'
+import ButtonBox from '../ButtonBox'
 
 const Header = () => {
   return (
-    <div className='w-full h-[75px] shadow-sm sticky top-0 border-b border-b-[#E6E6E6] flex justify-center items-center'>
+    <div className='w-full h-[72px] shadow-sm bg-white sticky z-50 top-0 border-b border-b-[#E6E6E6] flex justify-center items-center'>
         <nav className='w-[1156px] h-full flex justify-between items-center'>
             <div className='flex items-center gap-x-7 px-4 h-full'>
                 <Image src={LogoImg} alt='LogoImg' className='h-[32px] w-[166px]'/>
@@ -15,7 +16,7 @@ const Header = () => {
                     </Link>
                 ))}
             </div>
-            <button className='bg-[#2852E4] text-sm px-12 py-4 text-white font-bold rounded-lg'>درخواست وام</button>
+            <ButtonBox title='درخواست وام' customStyle='bg-[#2852E4]' />
         </nav>
 
     </div>

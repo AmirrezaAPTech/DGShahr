@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
+      <div className="fixed top-0 w-full">
       <Header />
+      </div>
       <body className={inter.className}>{children}</body>
     </html>
   );

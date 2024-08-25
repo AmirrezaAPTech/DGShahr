@@ -40,3 +40,7 @@ box-sizing: border-box;
 .header-links-animation:hover:before {
   width: 100%;
 }
+
+.hero-image-bg {
+  background-image: radial-gradient(circle at 50% 35%, #3bb8ff, #3bb8ff00 60%);
+}
