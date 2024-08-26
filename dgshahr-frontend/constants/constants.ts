@@ -49,6 +49,11 @@ import BeneliCover from '@/public/assets/img/article/beneli-TNT15-768x488.webp'
 import LaptopCover from '@/public/assets/img/article/laptop.webp'
 import FryCover from '@/public/assets/img/article/fry.webp'
 
+// Footer
+import Samandehi from '@/public/assets/img/footer/Samandehi.svg'
+import Enamad from '@/public/assets/img/footer/Enamad.svg'
+import BankShahr from '@/public/assets/img/footer/BankShahr.svg'
+
 import { StaticImageData } from 'next/image'
 
 // HeaderLinks
@@ -339,3 +344,71 @@ export const QuestionsList = [
         detail: "میزان سقف دریافت وام به رتبه اعتباری، سابقه حساب بانکی و سوابق چک برگشتی بستگی دارد. متقاضیان دارای رتبه‌ اعتباری A می‌توانند بدون نیاز به ضامن و فقط با ارائه یک برگ چک، تا سقف ۱۲۰میلیون تومان وام کالا دریافت کنند. افراد دارای رتبه‌ اعتباری B، امکان دریافت وام با یک برگ چک تا سقف ۱۰۰میلیون تومان را دارند. رتبه‌‌های اعتباری A و B می‌توانند برای دریافت وام تا سقف ۲۰۰میلیون تومان، ۲ برگ چک (چک شخص + چک ضامن) یا یک گواهی کسر از حقوق را به‌عنوان ضمانت ارائه دهند. "
     },
 ]
+
+
+// Footer
+
+interface FooterItemsProps {
+    helpList: {
+        name: string;
+        address: string;
+    }[];
+    moreInfo: {
+        name: string;
+        address: string;
+    }[];
+    trustImages: StaticImageData[]
+}
+
+
+export const FooterItems: FooterItemsProps = {
+    helpList : [
+        {
+            name: "سوالات متداول",
+            address: "/faq"
+        },
+        {
+            name: "راهنمای دریافت وام دیجی‌شهر",
+            address: "/"
+        },
+        {
+            name: "محاسبه اقساط",
+            address: "/"
+        },
+        {
+            name: "شرایط دریافت وام",
+            address: "/"
+        },
+        {
+            name: "مدارک دریافت وام",
+            address: "/"
+        },
+    ],
+    moreInfo : [
+        {
+            name: "درباره ما",
+            address: "/faq"
+        },
+        {
+            name: "فرصت های شغلی",
+            address: "/"
+        },
+        {
+            name: "تماس با ما",
+            address: "/"
+        },
+        {
+            name: "بلاگ",
+            address: "/"
+        },
+        {
+            name: "قوانین و مقررات",
+            address: "/"
+        },
+        {
+            name: "فروشنده شوید",
+            address: "/"
+        },
+    ],
+    trustImages: [BankShahr, Enamad, Samandehi]
+}

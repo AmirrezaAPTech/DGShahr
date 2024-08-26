@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +18,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <div className="fixed top-0 w-full">
+      <div className="fixed top-0 w-full z-50">
       <Header />
       </div>
       <body className={inter.className}>{children}</body>
+      <div className="w-full">
+      <Footer />
+      </div>
     </html>
   );
 }
