@@ -12,12 +12,12 @@ const HeroBannerCalculator = () => {
 
 
   return (
-    <div className='flex flex-col justify-start items-center mt-5 px-6'>
+    <div className='absolute -bottom-24 flex flex-col justify-start items-center mt-5 px-8'>
         <div className='flex flex-col items-center justify-start gap-y-4'>
         <p className=' text-white font-[vazirBold]'>محاسبه اقساط دیجی شهر</p>
         <Image src={arrowDownIcon} alt='arrowDownIcon' className='image-bounce' />
         </div>
-        <div className='grid grid-cols-10 w-full bg-white rounded-[2rem] shadow-2xl mt-4 px-4 py-8'>
+        <div className='grid grid-cols-10 w-full bg-white rounded-3xl shadow-2xl mt-4 px-4 py-8'>
                 <LoanCalculator amount={amount} setAmount={setAmount} duration={duration} setDuration={setDuration}/>
             <div className='col-span-5 px-6 space-y-10'>
                 <div className='bg-[#EEF2FF] w-full rounded-2xl flex flex-col items-center justify-between px-4 py-6 gap-y-6'>

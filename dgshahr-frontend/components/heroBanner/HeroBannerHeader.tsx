@@ -15,7 +15,7 @@ const HeroBannerHeader = () => {
         </div>
     </div>
     <div className='col-span-5 pl-4 flex justify-center items-center hero-image-bg pt-10'>
-    <Image src={HeroImg} alt='HeroImg' className='h-[400px] w-auto '/>
+    <Image src={HeroImg} alt='HeroImg' className='h-[390px] w-auto '/>
     </div>
 </div>
   )

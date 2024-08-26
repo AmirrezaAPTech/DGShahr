@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Footer = () => {
   return (
-    <div className='w-full h-[90vh] bg-[#F1F5F9] flex justify-center relative'>
+    <div className='w-full bg-[#F1F5F9] flex justify-center relative pb-24'>
         <div className='w-[1156px]'>
         <div className='flex justify-between items-center h-[80px] border-b border-b-[#E6E6E6]'>
         <Image src={LogoImg} alt='LogoImg' className='h-[32px] w-[166px]'/>
