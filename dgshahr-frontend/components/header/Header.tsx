@@ -16,9 +16,8 @@ const Header = () => {
                     </Link>
                 ))}
             </div>
-            <ButtonBox title='درخواست وام' customStyle='bg-[#2852E4]' />
+            <ButtonBox title='درخواست وام' customStyle='bg-[#2852E4] hover:bg-opacity-80 text-white' />
         </nav>
-
     </div>
   )
 }

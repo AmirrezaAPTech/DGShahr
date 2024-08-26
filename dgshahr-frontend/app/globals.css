@@ -44,3 +44,21 @@ box-sizing: border-box;
 .hero-image-bg {
   background-image: radial-gradient(circle at 50% 35%, #3bb8ff, #3bb8ff00 60%);
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.image-bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+.curve {
+  border-bottom-left-radius: 82% 46px;
+  border-bottom-right-radius: 82% 46px;
+}
