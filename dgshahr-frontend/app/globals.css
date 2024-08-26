@@ -62,3 +62,47 @@ box-sizing: border-box;
   border-bottom-left-radius: 82% 46px;
   border-bottom-right-radius: 82% 46px;
 }
+
+
+input[type='range'] {
+  @apply appearance-none w-full h-2 bg-gray-200 rounded-lg;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  @apply appearance-none w-5 h-5 bg-blue-500 rounded-full cursor-pointer shadow;
+}
+
+input[type='range']::-moz-range-thumb {
+  @apply w-5 h-5 bg-yellow-400 rounded-full cursor-pointer shadow;
+}
+
+input[type='range']::-ms-thumb {
+  @apply w-5 h-5 bg-blue-500 rounded-full cursor-pointer shadow;
+}
+
+input[type='range']:focus {
+  @apply outline-none;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  @apply bg-blue-600;
+}
+
+/* Custom Swiper navigation button styles */
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply bg-[#2852E4] text-white rounded-lg px-5 text-sm shadow-lg transition-all;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  @apply bg-blue-600;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 15px !important;
+  font-weight: 200;
+  color: white;
+}
