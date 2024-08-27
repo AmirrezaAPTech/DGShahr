@@ -2,9 +2,9 @@ import React from 'react';
 
 const VideoPlayer: React.FC = () => {
   return (
-    <div className="relative w-full pb-5">
+    <div className="relative w-full pb-[57%]">
       <iframe
-        className="lg:absolute lg:top-0 lg:left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full"
         src="https://www.aparat.com/video/video/embed/videohash/g31k5w2/vt/frame?autoplay=true"
         allowFullScreen
         webkitAllowFullScreen

@@ -22,7 +22,7 @@ const Footer = () => {
         <div className='absolute bottom-0 left-0 right-0 w-full h-24 bg-[#E2E8F0] flex justify-center items-center max-xl:px-10 max-sm:px-1'>
             <div className='w-[1156px] flex justify-between items-center'>
             <p className='md:text-md sm:text-sm text-[10px] '>کلیه حقوق مادی و معنوی متعلق به شرکت نوآوران تجارت گستر فرین (دیجی‌شهر) می باشد.</p>
-            <button className='border border-[rgb(203,213,225)] rounded-md px-6 py-2 flex flex-nowrap gap-x-2 hover:opacity-65'><span className='max-md:hidden text-nowrap'>بازگشت به بالا </span><Image src={arrowUp} alt='arrowUp' /></button>
+            <Link href={"/"}><button className='border border-[rgb(203,213,225)] rounded-md px-6 py-2 flex flex-nowrap gap-x-2 hover:opacity-65'><span className='max-md:hidden text-nowrap'>بازگشت به بالا </span><Image src={arrowUp} alt='arrowUp' /></button></Link>
             </div>
         </div>
     </div>

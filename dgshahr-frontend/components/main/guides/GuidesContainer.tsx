@@ -10,8 +10,8 @@ const GuidesContainer = () => {
   const [videoVisible, setVideoVisible] = useState<boolean>(false)
   return (
     <div className='lg:grid lg:grid-cols-10 gap-x-5 sm:px-20 px-1 max-lg:flex max-lg:flex-col max-lg:justify-start max-lg:items-center w-full'>
-    <div className='col-span-5 relative'>
-    {!videoVisible?<Image src={VideoCover} alt='VideoCover' onClick={() => setVideoVisible(true)} className='sm:w-[430px] w-auto cursor-pointer'/>
+    <div className='lg:col-span-5 w-full flex justify-center relative'>
+    {!videoVisible?<Image src={VideoCover} alt='VideoCover' onClick={() => setVideoVisible(true)} className='sm:w-[430px] w-full max-w-[430px] cursor-pointer'/>
         :<VideoPlayer/>
       }
     </div>
