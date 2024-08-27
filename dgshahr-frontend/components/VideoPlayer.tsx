@@ -7,8 +7,6 @@ const VideoPlayer: React.FC = () => {
         className="absolute top-0 left-0 w-full h-full"
         src="https://www.aparat.com/video/video/embed/videohash/g31k5w2/vt/frame?autoplay=true"
         allowFullScreen
-        webkitAllowFullScreen
-        mozAllowFullScreen
       ></iframe>
     </div>
   );

@@ -21,7 +21,7 @@ const Sidebar = () => {
     <ul className="menu bg-white text-base-content min-h-full w-80 p-4 flex justify-start items-start relative">
       <li className='pb-5'> <Image src={LogoImg} alt='LogoImg' className='w-[200px]'/></li>
       {HeaderLinks.map((link: HeaderLinkProps) => (
-              <li className='border-t border-[#EEEEEE] w-full flex justify-start items-start h-[57px]'><Link href={link.url} key={link.name} className='relative flex justify-start items-center text-sm text-[#68788E] font-[vazirBold] header-links-animation h-full hover:text-[#2852E4]'>{link.name}</Link></li>
+              <li key={link.name} className='border-t border-[#EEEEEE] w-full flex justify-start items-start h-[57px]'><Link href={link.url} key={link.name} className='relative flex justify-start items-center text-sm text-[#68788E] font-[vazirBold] header-links-animation h-full hover:text-[#2852E4]'>{link.name}</Link></li>
       ))}
     <label htmlFor="my-drawer-4" className="drawer-button cursor-pointer absolute top-4 left-4">
         <Image src={xMarkIcon} alt="xMarkIcon" />
