@@ -10,7 +10,7 @@ interface ArticleCardProps {
 
 const ArticleCard: React.FC<ArticleCardProps> = ({article}) => {
   return (
-    <div className='max-xl:flex-shrink-0 h-[460px] xl:w-96 max-xl:w-full max-xl:max-w-96  transition-all duration-200 cursor-pointer rounded-2xl shadow-3xl flex flex-col shadow-2xl gap-y-3 p-5 relative border'>
+    <div className='max-xl:flex-shrink-0 h-[460px] xl:w-96 max-xl:w-full max-xl:max-w-96  transition-all duration-200 cursor-pointer rounded-2xl max-xl:shadow-3xl flex flex-col shadow gap-y-3 p-5 relative border'>
     <Image src={article.img} alt={article.title} className=' rounded-2xl'/>
     <p className='font-[vazirBold] text-[17px]'>{article.title}</p>
     <p className='text-sm leading-6'>{article.description}</p>

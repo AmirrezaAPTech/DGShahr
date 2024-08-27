@@ -7,8 +7,8 @@ import Image from 'next/image'
 
 const ArticlesContainer = () => {
   return (
-    <div className='w-full sm:space-y-9'>
-    <div className='w-full flex justify-between items-center xl:flex-row-reverse gap-x-12 max-xl:overflow-x-auto no-scrollbar max-xl:pb-12 max-sm:px-2'>
+    <div className='w-full space-y-9'>
+    <div className='w-full flex justify-between items-center xl:flex-row-reverse gap-x-12 max-xl:overflow-x-auto no-scrollbar xl:pb-12 max-sm:px-2'>
         {ArticlesList.map((article : ArticlesListProps) => (
             <ArticleCard key={article.title} article={article} />
         ))

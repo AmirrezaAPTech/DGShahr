@@ -9,7 +9,7 @@ import chevronUpIcon from '@/public/assets/icon/chevronUp.svg'
 const CommentsContainer = () => {
     const [commentsVisible, setCommentsVisible] = useState<boolean>(false)
   return (
-    <div className='flex flex-col items-center mb-20 w-full'>
+    <div className='flex flex-col items-center w-full'>
     <div className={`xl:grid xl:grid-cols-3 xl:w-[1156px] w-full flex max-xl:overflow-x-auto no-scrollbar max-sm:pb-16 xl:gap-y-12 xl:gap-x-4 gap-12 ${commentsVisible ? "" : "xl:h-96 xl:overflow-hidden xl:bg-white xl:opacity-60"}`}>
         {CommentsList.map((comment: CommentsListProps) => (
             <CommentCard key={comment.name} comment={comment} />
