@@ -1,14 +1,19 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import VideoCover from '@/public/assets/img/video_cover.webp'
 import arrowLeftIcon from '@/public/assets/icon/arrowLeft.svg'
+import VideoPlayer from '@/components/VideoPlayer'
 
 const GuidesContainer = () => {
+  const [videoVisible, setVideoVisible] = useState<boolean>(false)
   return (
     <div className='lg:grid lg:grid-cols-10 gap-x-5 sm:px-20 px-1 max-lg:flex max-lg:flex-col max-lg:justify-start max-lg:items-center w-full'>
-    <div className='col-span-5'>
-        <Image src={VideoCover} alt='VideoCover' className='sm:w-[430px] w-auto'/>
+    <div className='col-span-5 relative'>
+    {!videoVisible?<Image src={VideoCover} alt='VideoCover' onClick={() => setVideoVisible(true)} className='sm:w-[430px] w-auto cursor-pointer'/>
+        :<VideoPlayer/>
+      }
     </div>
     <div className="col-span-5 flex flex-col gap-y-12 pt-4">
         <p className='lg:text-right text-center'>
