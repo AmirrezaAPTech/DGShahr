@@ -7,7 +7,7 @@ import React from 'react'
 const CardsContainer = () => {
   return (
     <div className='flex flex-col w-full'>
-    <div className='flex xl:flex-row-reverse lg:justify-center justify-start items-center max-xl:overflow-x-auto'>
+    <div className='flex xl:flex-row-reverse lg:justify-center justify-start items-center max-xl:overflow-x-auto no-scrollbar'>
         {CardLists.map((card, index) => (
             <div key={index} className='flex-shrink-0 w-[320px] h-[450px]'>
             <Image src={card} alt="CardImg" className='w-[300px] h-auto transition-all duration-200 cursor-pointer hover:w-[320px]'/>

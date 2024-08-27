@@ -111,3 +111,14 @@ input[type='range']::-webkit-slider-thumb:hover {
   font-weight: 200;
   color: white;
 }
+
+
+.no-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

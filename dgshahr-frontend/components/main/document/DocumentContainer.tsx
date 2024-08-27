@@ -4,7 +4,7 @@ import React from 'react'
 
 const DocumentContainer = () => {
   return (
-    <div className='flex xl:flex-row-reverse xl:justify-center items-center xl:gap-12 gap-5 max-xl:overflow-x-auto max-xl:px-6 w-full'>
+    <div className='flex xl:flex-row-reverse xl:justify-center items-center xl:gap-12 gap-5 max-xl:overflow-x-auto no-scrollbar max-xl:px-6 w-full'>
     {documentLists.map(doc =>(
         <div key={doc.name} className='flex-shrink-0 w-[240px] h-[230px] flex items-end relative'>
             <div className='absolute top-0 w-full flex justify-center'>
