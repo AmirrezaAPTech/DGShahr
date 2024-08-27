@@ -7,15 +7,15 @@ import Image from 'next/image'
 
 const ArticlesContainer = () => {
   return (
-    <div className='w-full space-y-9'>
-    <div className='w-full flex justify-between items-center flex-row-reverse gap-x-12'>
+    <div className='w-full sm:space-y-9'>
+    <div className='w-full flex justify-between items-center xl:flex-row-reverse gap-x-12 max-xl:overflow-x-auto max-xl:pb-12 max-sm:px-2'>
         {ArticlesList.map((article : ArticlesListProps) => (
-            <ArticleCard article={article} />
+            <ArticleCard key={article.title} article={article} />
         ))
         }
     </div>
     <div className='w-full'>
-    <Link href={"/"} className='flex justify-end items-center gap-x-2 flex-nowrap'><p className='text-[#2852E4]'>مشاهده همه</p><Image src={arrowLeftIcon} alt='arrowLeftIcon' className='w-4'/></Link>
+    <Link href={"/"} className='flex justify-end items-center gap-x-2 flex-nowrap max-xl:pl-4'><p className='text-[#2852E4]'>مشاهده همه</p><Image src={arrowLeftIcon} alt='arrowLeftIcon' className='w-4'/></Link>
     </div>
     </div>
   )

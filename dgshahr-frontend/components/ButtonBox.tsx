@@ -7,7 +7,7 @@ interface ButtonBoxProps {
 
 const ButtonBox: React.FC<ButtonBoxProps> = ({title, customStyle}) => {
   return (
-    <button className={`text-sm px-10 py-[12px] font-[vazirBold] rounded-lg transition-all duration-200 ${customStyle}`}>{title}</button>
+    <button className={`text-sm sm:px-10 max-sm:w-full py-[12px] font-[vazirBold] rounded-lg transition-all duration-200 text-nowrap ${customStyle}`}>{title}</button>
   )
 }
 

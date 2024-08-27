@@ -19,7 +19,7 @@ import GuidesContainer from './guides/GuidesContainer'
 const MainPage = () => {
   return (
     <div className='min-h-screen mt-44 space-y-24 w-full flex flex-col items-center'>
-    <SectionBox title='راهنمای درخواست وام' >
+     <SectionBox title='راهنمای درخواست وام' >
     <GuidesContainer />
     </SectionBox>
 

@@ -32,7 +32,7 @@ box-sizing: border-box;
   height: 3px;
   width: 0%;
   background-color: #2852E4;
-  transition: all 0.1s 0.1s ease-in;
+  transition: all 0.1s ease-in;
   transform-origin: left;
   border-radius: 40px;
 }
@@ -43,6 +43,11 @@ box-sizing: border-box;
 
 .hero-image-bg {
   background-image: radial-gradient(circle at 50% 35%, #3bb8ff, #3bb8ff00 60%);
+}
+.hero-image-bg-sm {
+  @media screen and (max-width: 1023px) {
+    background-image: radial-gradient(circle at 50% 35%, #3bb8ff, #3bb8ff00 50%);
+  }
 }
 
 @keyframes bounce {

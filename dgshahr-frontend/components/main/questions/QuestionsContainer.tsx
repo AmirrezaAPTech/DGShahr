@@ -7,7 +7,7 @@ import React from 'react'
 const QuestionsContainer = () => {
   return (
     <div className='flex flex-col gap-y-3 justify-center items-center mb-16'>
-        {QuestionsList.map(question => <div className='w-full'>
+        {QuestionsList.map(question => <div key={question.topic} className='w-full max-lg:px-2'>
      <div tabIndex={0} className="collapse collapse-arrow shadow bg-white border pr-3 py-3">
         <div className="collapse-title text-md font-[vazirBold] text-[#475569] flex justify-start items-center gap-x-2">{question.topic}</div>
         <div className="collapse-content text-[#009B9D]">
